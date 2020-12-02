@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="example.xsl"?>
+<Article>
+  <Title>Inspired Camera</Title>
+  <Authors>
+    <Author>John Foo</Author>
+    <Author>Jane Bar</Author>
+  </Authors>
+  <Summary>Focus on what's important; 
+          Capture the good times; 
+          Develop from the negatives.</Summary>
+</Article>
+
