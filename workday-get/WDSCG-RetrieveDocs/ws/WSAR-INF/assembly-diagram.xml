@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wdnm:Diagram xmlns:wdnm="http://workday.com/studio/editors/notation">
+  <element href="assembly.xml#WorkdayAssembly"/>
+  <visualProperties x="20" y="177">
+    <element href="assembly.xml#StartHere"/>
+  </visualProperties>
+  <visualProperties x="337" y="77">
+    <element href="assembly.xml#GetEventDocs"/>
+  </visualProperties>
+  <visualProperties x="497" y="132">
+    <element href="assembly.xml#RouteDocs"/>
+  </visualProperties>
+  <visualProperties x="691" y="141">
+    <element href="assembly.xml#ProcessDocs"/>
+  </visualProperties>
+  <visualProperties x="932" y="170">
+    <element href="assembly.xml#PutDocsOnWorkday"/>
+  </visualProperties>
+  <visualProperties x="261" y="296">
+    <element href="assembly.xml#quikcLog"/>
+  </visualProperties>
+  <visualProperties x="249" y="241">
+    <element href="assembly.xml#ErrMsg"/>
+  </visualProperties>
+  <connections type="routesResponseTo" sourceAnchorY="1.0" targetAnchorX="0.3076923076923077" targetAnchorY="0.11585365853658537">
+    <source href="assembly.xml#GetEventDocs"/>
+    <target href="assembly.xml#RouteDocs"/>
+  </connections>
+  <connections type="routesTo" sourceAnchorX="0.875" sourceAnchorY="1.0" targetAnchorX="0.3787878787878788" targetAnchorY="0.23958333333333334">
+    <source href="assembly.xml#//@beans/@mixed.1/@route.0/@subRoute.0"/>
+    <target href="assembly.xml#ProcessDocs"/>
+  </connections>
+  <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.17708333333333334" targetAnchorX="0.13020833333333334" targetAnchorY="0.2702702702702703">
+    <source href="assembly.xml#ProcessDocs"/>
+    <target href="assembly.xml#PutDocsOnWorkday"/>
+  </connections>
+  <connections type="routesTo" sourceAnchorX="0.7849462365591398" sourceAnchorY="1.0" targetAnchorX="0.5673076923076923" targetAnchorY="0.8648648648648649">
+    <source href="assembly.xml#//@beans/@mixed.1/@mixed.11/@mixed.3"/>
+    <target href="assembly.xml#ErrMsg"/>
+  </connections>
+  <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.15748031496062992" targetAnchorX="0.3355263157894737" targetAnchorY="0.4594594594594595">
+    <source href="assembly.xml#quikcLog"/>
+    <target href="assembly.xml#GetEventDocs"/>
+  </connections>
+  <swimlanes x="163" y="71" name="Swimlane" orientation="VERTICAL">
+    <elements href="assembly.xml#quikcLog"/>
+    <elements href="assembly.xml#ErrMsg"/>
+  </swimlanes>
+</wdnm:Diagram>
