@@ -17,7 +17,7 @@
     <element href="assembly.xml#PutDocsOnWorkday"/>
   </visualProperties>
   <visualProperties x="261" y="296">
-    <element href="assembly.xml#quikcLog"/>
+    <element href="assembly.xml#quickLog"/>
   </visualProperties>
   <visualProperties x="249" y="241">
     <element href="assembly.xml#ErrMsg"/>
@@ -39,11 +39,15 @@
     <target href="assembly.xml#ErrMsg"/>
   </connections>
   <connections type="routesTo" sourceAnchorX="1.0" sourceAnchorY="0.15748031496062992" targetAnchorX="0.3355263157894737" targetAnchorY="0.4594594594594595">
-    <source href="assembly.xml#quikcLog"/>
+    <source href="assembly.xml#quickLog"/>
     <target href="assembly.xml#GetEventDocs"/>
   </connections>
+  <connections type="routesTo" sourceAnchorX="0.6386554621848739" sourceAnchorY="1.0" targetAnchorX="0.57" targetAnchorY="0.11023622047244094">
+    <source href="assembly.xml#StartHere"/>
+    <target href="assembly.xml#quickLog"/>
+  </connections>
   <swimlanes x="163" y="71" name="Swimlane" orientation="VERTICAL">
-    <elements href="assembly.xml#quikcLog"/>
+    <elements href="assembly.xml#quickLog"/>
     <elements href="assembly.xml#ErrMsg"/>
   </swimlanes>
 </wdnm:Diagram>
