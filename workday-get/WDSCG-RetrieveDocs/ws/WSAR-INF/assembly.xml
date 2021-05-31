@@ -34,14 +34,19 @@
                     <cc:log-message>
                         <cc:text>------------------------------------&#xD;
 Starting to Get Documents&#xD;
-------------------------------------</cc:text>
+------------------------------------&#xD;
+Done with logged comment.</cc:text>
                         <cc:message-content/>
                     </cc:log-message>
                 </cc:log>
+                <cc:eval id="Eval">
+                    <cc:expression>props['encounter'] = '42'</cc:expression>
+                    <cc:expression>props['simple'] = 1+2</cc:expression>
+                </cc:eval>
             </cc:steps>
             <cc:send-error id="LogError" routes-to="ErrMsg"/>
         </cc:async-mediation>
-        <cc:local-out id="ErrMsg" endpoint="vm://wcc/PutIntegrationMessage"><cc:set name="is.message.severity" value="'INFO'"/><cc:set name="is.message.summary" value="'Catching error in logging'"/></cc:local-out>
+        <cc:local-out id="ErrMsg" endpoint="vm://wcc/PutIntegrationMessage"><cc:set name="is.message.severity" value="'INFO'"/><cc:set name="is.message.summary" value="'Catching simple error in logging'"/></cc:local-out>
 	</cc:assembly>
 
 </beans>
