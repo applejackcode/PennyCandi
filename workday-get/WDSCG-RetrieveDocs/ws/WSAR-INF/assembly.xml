@@ -41,6 +41,7 @@ Done with logged comment.</cc:text>
                 </cc:log>
                 <cc:eval id="Eval">
                     <cc:expression>props['encounter'] = '42'</cc:expression>
+                    <cc:expression>props['simple'] = 1+2</cc:expression>
                 </cc:eval>
             </cc:steps>
             <cc:send-error id="LogError" routes-to="ErrMsg"/>
