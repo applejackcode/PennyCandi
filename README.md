@@ -1,2 +1,2 @@
-# coursegear
-Repository for example code added to coursegear site.
+# PennyCandi
+Repository for main site.
